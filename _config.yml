@@ -48,6 +48,18 @@ include:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+# Config for Jekyll archives
+jekyll-archives:
+  enabled: all
+  layouts:
+    year:  archive-year
+    month: archive-month
+    day:   archive-day
+  permalinks:
+    year:  '/:year/'
+    month: '/:year/:month/'
+    day:   '/:year/:month/:day/'
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
